@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('bg\ img4.jpeg');
+    background-size: cover;
+    background-position: left center; /* Moves the image to the left side */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Top and bottom alignment */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Main Title */
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: #40043c; /* Vibrant Orange */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Adds a subtle shadow for better contrast */
+}
+
+/* Subheading */
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2f052c; /* Bright Pink */
+    text-shadow: 0 0 10px rgb(253, 252, 252);
+    /* Styling for the highlighted word */
+}
+
+.highlight {
+    color: #e3a220; /* Change this to your desired color, e.g., Tomato Red */
+    text-shadow: none; /* Optional: to remove or customize the shadow specifically for "Weds" */
+}
+/* Styling for the smaller font size */
+.smaller-font {
+    font-size: 1.2rem; /* Adjust size as needed for smaller text */
+    vertical-align: middle; /* Ensures proper alignment with surrounding text */
+}
+
+/* Event Details at the Bottom */
+.bottom-content {
+    margin-bottom: 30px; /* Add more spacing from the bottom */
+}
+
+.event-details,
+.event-date {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Bright Yellow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background: radial-gradient(circle, #edae39, #441f02);
+    box-shadow: 0 4px 6px rgba(52, 21, 1, 0.648);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #40043c;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+/* Mobile-Specific Styling */
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .event-details,
+    .event-date {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
